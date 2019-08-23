@@ -1,0 +1,252 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+  scroll-behavior: smooth;
+}
+
+.title {
+  color:#666;
+  font-size:16px;
+  font-weight:400;
+  line-height:1.8em;
+  margin:0;
+}
+
+.pimg1, .pimg2, .pimg3{
+  position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+.pimg1{
+  background-image:url('../img/manhattan-336708_1920.jpg');
+  min-height:100%;
+}
+
+.pimg2 {
+  min-height: 400px;
+}
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-middle{
+  background-color: #B0B2B4;
+  color: white;
+  padding:50px 80px;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
+}
+
+.ptext{
+  position:absolute;
+  top:50%;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:27px;
+  letter-spacing:8px;
+  text-transform:uppercase;
+}
+
+.ptext .border{
+  font-family: 'Dancing Script', cursive;
+  background-color:#111;
+  color:#fff;
+  padding:10px;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+@media(max-width:568px){
+  .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
+}
+
+.description {
+  background: -webkit-linear-gradient(#434343, #000000);
+  font-family: 'Abel', cursive;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 120%;
+  color:white;
+}
+
+table, th, td {
+  border: 1px, solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 5px;
+}
+
+th {
+  text-align: left;
+}
+
+#table_title {
+  text-align: center;
+  color:black;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+}
+
+#nav li {
+  list-style: none;
+}
+
+ul {
+  position: absolute;
+  width: 0%;
+  top: 44.5%;
+}
+
+table {
+  font-family: 'Abel', cursive;
+  font-size: 120%;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  margin: 0%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;  
+}
+
+A:hover {
+  text-decoration: underline;
+}
+
+.read_more {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 0%;
+}
+
+.centered {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.read {
+  margin: 0;
+  color: black;
+  font-size: 130%;
+  font-family: 'Abel', cursive;
+}
+
+.gameroom {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+}
+
+.gameroom img {
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: gray;
+  z-index: 999999;
+  }
+
+.loading-wrapper {
+  width: 100%;
+  text-align: center;
+  font-size: 200%;
+  font-family: cursive;
+}
+
+footer {
+  min-height: 5%;
+  font-family: 'Abel', cursive;
+  font-size: 150%;
+  background-color: rgba(0,0,0,.85);
+  color: white;
+}
+
+#footer {
+  text-align: center;
+  opacity: .75;
+  vertical-align: middle;
+}
+
+h3 {
+  margin: 0;
+}
+
+.animate_big {
+  transition: all .2s ease-in-out;
+}
+
+.animate_big:hover {
+  transform: scale(1.25);
+}

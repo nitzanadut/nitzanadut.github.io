@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nitzan Adut</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Dancing+Script|Lobster&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="img/logos/logo.png" />
+</head>
+<body>
+  <!--CSS Spinner credit: https://tobiasahlin.com/spinkit/-->
+  <div class="spinner-wrapper">
+      <div class="loading-wrapper">
+      <h1 id="loading">Loading...</h1>
+      </div>
+      <div class="spinner">
+          
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script>
+              function sleep(delay) {
+                  var start = new Date().getTime();
+                  while (new Date().getTime() < start + delay);
+              }
+              $(document).ready(function() {
+              $(window).on("load", function() {
+              preloaderFadeOutTime = 2000;
+              function hidePreloader() {
+              var preloader = $('.spinner-wrapper');
+              preloader.fadeOut(preloaderFadeOutTime);
+              }
+              hidePreloader();
+              });
+              });
+          </script>
+      </div>
+      </div>
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        Nitzan Adut
+      </span>
+    </div>
+    <ul id="nav">
+      <li><a href="https://github.com/prerikoth" target="_blank">
+        <img class="animate_big icon" src="img/logos/github_transparent.png"/>
+      </a></li>
+      <li><a href="contact.html">
+        <img class="animate_big icon" src="img/logos/email.png"/>
+      </a></li>
+    </ul>
+
+    <div class="gameroom animate_big"><a href="https://prerikoth.github.io/Games/main.html" target="_blank"><img class="icon" src="img/logos/gameroom.png"></a></div>
+
+    <div class="centered">
+      <a href="#middle"><img class="read_more animate_big" src="img/down_arrow.png"></a>
+    </div>
+  </div>
+
+  <section id="middle" class="section section-light">
+    <h2>About Me</h2>
+    <p class="description">
+      18 y/o Amateur Software Developer from Israel.<br> Familiar with Security, Linux, Windows, Android, Arduino, Assembly, C/C++, C#, Java, Python, Web, Git and Machine Learning.
+      <br>CV
+    </p>
+  </section>
+  
+  <section class="section-dark">
+      <h2>Sample Projects</h2>
+      <table style="width:100%">
+          <tr>
+            <th>Project</th>
+            <th>Description</th>
+            <th>Language</th>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/dindibo/Krypton" target="_blank">Krypton</a></td>
+            <td>Krypton is a scripting language currently under develepment by <a href="https://github.com/dindibo" target="_blank">dindibo4</a> and myself. Version 1 of the language will probably be out in the next few months.</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/prerikoth/Kirb3-s-Minecraft-Auto-Fisher" target="_blank">MC Auto Fisher</a></td>
+            <td>This is a program that automatically fishes for you in the popular sandbox game 'Minecraft'.</td>
+            <td>Python</td>
+          </tr>
+          <tr>
+              <td><a href="https://github.com/dindibo/Krypton" target="_blank">Android App</a></td>
+              <td>A simple MMO game developed as my senior year project.</td>
+              <td>C#</td>
+            </tr>
+          <tr>
+              <td><a href="https://prerikoth.github.io/Games/main.html" target="_blank">Game Room</a></td>
+              <td>Website for browsing simple online games</td>
+              <td>HTML/CSS</td>
+            </tr>
+        </table>
+  </section>
+
+  <footer>
+    <div id="footer">
+    <h3><a href="contact.html">Nitzan Adut ©</a></h3>
+  </div>
+  </footer>
+</body>
+</html>
